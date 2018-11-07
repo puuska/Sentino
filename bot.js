@@ -120,5 +120,7 @@ else if(message.content.toLowerCase().includes('ksenon'))
  file: "https://cdn.discordapp.com/attachments/502129186295775256/509809206086598656/12311058_1205365802824028_7475317206710761741_n.png"
 })
 });
+client.on('error', console.error);
+
 
 
