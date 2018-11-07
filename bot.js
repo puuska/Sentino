@@ -111,6 +111,14 @@ else if(message.content.toLowerCase().includes('rose moet'))
 		message.channel.send({
  file: "https://cdn.discordapp.com/attachments/314860074759749633/485747828405043227/Cyberfox_2018-09-02_11-47-45.png"
 })
+else if(message.content.toLowerCase().includes('xenon'))
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/502129186295775256/509809206086598656/12311058_1205365802824028_7475317206710761741_n.png"
+})
+else if(message.content.toLowerCase().includes('ksenon'))
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/502129186295775256/509809206086598656/12311058_1205365802824028_7475317206710761741_n.png"
+})
 });
 
 
