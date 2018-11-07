@@ -27,7 +27,7 @@ client.on('message', message => {
         message.channel.send("https://open.spotify.com/track/73Y3T1liCQuaUruFg0yP9b");    }
    if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
 	        message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" // Or replace with F
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
 })
 else if(message.content.toLowerCase().includes('bałuty'))
                 message.channel.send({
@@ -39,11 +39,11 @@ else if(message.content.toLowerCase().includes('baluty'))
 })
 else if(message.content.toLowerCase().includes('łódź'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" // Or replace with F
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
 })
 else if(message.content.toLowerCase().includes('złodziej'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" // Or replace with F
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
 })
 else if(message.content.toLowerCase().includes('lks'))
                 message.channel.send({
@@ -51,7 +51,7 @@ else if(message.content.toLowerCase().includes('lks'))
 })
 else if(message.content.toLowerCase().includes('łks'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407768560336896/lks.jpg" // Or replace with F
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407768560336896/lks.jpg"
 })
 else if(message.content.toLowerCase().includes('se ba'))
                 message.channel.send({
