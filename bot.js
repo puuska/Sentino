@@ -134,6 +134,11 @@ else if(message.content.toLowerCase().includes('optimal'))
 		message.channel.send({
  file: "https://pbs.twimg.com/media/Cee4H46WQAMQe7v.jpg"
 })
+else if(message.content.toLowerCase().includes('marycha'))
+                message.channel.send({
+ file: "https://www.wykop.pl/cdn/c3201142/comment_W72ifSmKotx6rmhlj7vH5T14xpzaQX8I.gif"
+})
+
 });
 client.on('error', console.error);
 
