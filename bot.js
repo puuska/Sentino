@@ -126,6 +126,14 @@ else if(message.content.toLowerCase().includes('gzuz'))
 		message.channel.send({
  file: "http://cute.gltdv.club/files/SzcH_coKv.png"
 })
+else if(message.content.toLowerCase().includes('ufo361'))
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/502129186295775256/510160487812431875/951904201-schock-ufo361-hoert-mit-musik-auf-fans-haben-dunklen-verdacht-P02HKQAZla7.png"
+})
+else if(message.content.toLowerCase().includes('optimal'))
+		message.channel.send({
+ file: "https://pbs.twimg.com/media/Cee4H46WQAMQe7v.jpg"
+})
 });
 client.on('error', console.error);
 
