@@ -8,6 +8,9 @@ const Discord = require('discord.js');
 const config = require("./config.json");
 const client = new Discord.Client();
 const bot = new Discord.Client();
+var sys = require('sys')
+var exec = require('child_process').exec;
+function puts(error, stdout, stderr) { sys.puts(stdout) }
  
 client.login(config.token);
 bot.login(config.token);
@@ -27,7 +30,7 @@ client.on('message', message => {
         message.channel.send("https://open.spotify.com/track/73Y3T1liCQuaUruFg0yP9b");    }
    if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
 	        message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" // Or replace with F
 })
 else if(message.content.toLowerCase().includes('bałuty'))
                 message.channel.send({
@@ -39,11 +42,11 @@ else if(message.content.toLowerCase().includes('baluty'))
 })
 else if(message.content.toLowerCase().includes('łódź'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" // Or replace with F
 })
 else if(message.content.toLowerCase().includes('złodziej'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" // Or replace with F
 })
 else if(message.content.toLowerCase().includes('lks'))
                 message.channel.send({
@@ -51,7 +54,7 @@ else if(message.content.toLowerCase().includes('lks'))
 })
 else if(message.content.toLowerCase().includes('łks'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407768560336896/lks.jpg"
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407768560336896/lks.jpg" // Or replace with F
 })
 else if(message.content.toLowerCase().includes('se ba'))
                 message.channel.send({
@@ -118,6 +121,10 @@ else if(message.content.toLowerCase().includes('xenon'))
 else if(message.content.toLowerCase().includes('ksenon'))
 		message.channel.send({
  file: "https://cdn.discordapp.com/attachments/502129186295775256/509809206086598656/12311058_1205365802824028_7475317206710761741_n.png"
+})
+else if(message.content.toLowerCase().includes('gzuz'))
+		message.channel.send({
+ file: "http://cute.gltdv.club/files/SzcH_coKv.png"
 })
 });
 client.on('error', console.error);
