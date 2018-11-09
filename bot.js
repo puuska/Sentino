@@ -138,7 +138,8 @@ else if(message.content.toLowerCase().includes('marycha'))
                 message.channel.send({
  file: "https://www.wykop.pl/cdn/c3201142/comment_W72ifSmKotx6rmhlj7vH5T14xpzaQX8I.gif"
 })
-
+else if(message.content.toLowerCase().includes('siatki z zakupami'))
+                message.channel.send(`${message.author} ty huju co ty pierdolisz si‌atki z zakupami i zrywanie metek jak ostatnio widzialem cie jak nurkowales w kontenerze pck a sen‌tino trzymal cie za nogi zebys nie wpadl tam calkowicie`)
 });
 client.on('error', console.error);
 
