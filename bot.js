@@ -19,6 +19,7 @@ bot.on('ready', () => {
   bot.user.setStatus('dnd')
 })
 console.log(`Pomyślnie wystartowano`);
+client.on('error', console.error);
 client.on('message', message => {
     if(message.content.toLowerCase() === 'sentino')
 
