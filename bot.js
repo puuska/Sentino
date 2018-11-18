@@ -141,17 +141,17 @@ else if(message.content.toLowerCase().includes('byku'))
 else if(message.content.toLowerCase().includes('siatki z zakupami'))
                 message.channel.send(`${message.author} ty huju co ty pierdolisz si‌atki z zakupami i zrywanie metek jak ostatnio widzialem cie jak nurkowales w kontenerze pck a sen‌tino trzymal cie za nogi zebys nie wpadl tam calkowicie`)
 else if(message.content.toLowerCase().includes('spejson'))
-				message.channel.send({
-	file: "https://cdn.discordapp.com/attachments/502129186295775256/513720992930201601/unknown.png"
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/502129186295775256/513720992930201601/unknown.png"
 })
-else if(message.channel.toLowerCase().includes('wojtas'))
-				message.channel.send({
-	file: "https://cdn.discordapp.com/attachments/502129186295775256/513721491150340096/unknown.png"
-				})
-else if(message.channel.toLowerCase().includes('pisior'))
-				message.channel.send({
-					file: "https://vignette.wikia.nocookie.net/serialblokekipa/images/2/21/Pisior.png/revision/latest?cb=20170807152339&path-prefix=pl"
-				})
+else if(message.content.toLowerCase().includes('wojtas'))
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/502129186295775256/513721491150340096/unknown.png"
+})
+else if(message.content.toLowerCase().includes('pisior'))
+		message.channel.send({
+ file: "https://vignette.wikia.nocookie.net/serialblokekipa/images/2/21/Pisior.png/revision/latest?cb=20170807152339&path-prefix=pl"
+})
 });
 client.on('error', console.error);
 
