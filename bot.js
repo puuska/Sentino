@@ -8,6 +8,9 @@ const Discord = require('discord.js');
 const config = require("./config.json");
 const client = new Discord.Client();
 const bot = new Discord.Client();
+var sys = require('sys')
+var exec = require('child_process').exec;
+function puts(error, stdout, stderr) { sys.puts(stdout) }
  
 client.login(config.token);
 bot.login(config.token);
@@ -16,6 +19,7 @@ bot.on('ready', () => {
   bot.user.setStatus('dnd')
 })
 console.log(`Pomyślnie wystartowano`);
+client.on('error', console.error);
 client.on('message', message => {
     if(message.content.toLowerCase() === 'sentino')
 
@@ -96,11 +100,11 @@ else if(message.content.toLowerCase().includes('montana'))
 else if(message.content.toLowerCase().includes('gdzie jest moj samsung'))
 		message.channel.send('dzwoni moj maxcom')
 else if(message.content.toLowerCase().includes('kupadupa'))
-		message.channel.send('<@168649104035938305>')
+		message.channel.send('\<@168649104035938305>')
 else if(message.content.toLowerCase().includes('@MrNovak'))
-		message.channel.send('<@168649104035938305>')
-else if(message.content.toLowerCase().includes('@<168649104035938305>'))
-		message.channel.send('<@168649104035938305>')
+		message.channel.send('\<@168649104035938305>')
+else if(message.content.toLowerCase().includes('\@<168649104035938305>'))
+		message.channel.send('\<@168649104035938305>')
 else if(message.content.toLowerCase().includes('!s invite'))
 		message.channel.send('https://discordapp.com/oauth2/authorize?client_id=486520953552109568&scope=bot')
 else if(message.content.toLowerCase().includes('bingo'))
@@ -111,6 +115,40 @@ else if(message.content.toLowerCase().includes('rose moet'))
 		message.channel.send({
  file: "https://cdn.discordapp.com/attachments/314860074759749633/485747828405043227/Cyberfox_2018-09-02_11-47-45.png"
 })
+else if(message.content.toLowerCase().includes('xenon'))
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/502129186295775256/509809206086598656/12311058_1205365802824028_7475317206710761741_n.png"
+})
+else if(message.content.toLowerCase().includes('ksenon'))
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/502129186295775256/509809206086598656/12311058_1205365802824028_7475317206710761741_n.png"
+})
+else if(message.content.toLowerCase().includes('gzuz'))
+		message.channel.send({
+ file: "http://cute.gltdv.club/files/SzcH_coKv.png"
+})
+else if(message.content.toLowerCase().includes('ufo361'))
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/502129186295775256/510160487812431875/951904201-schock-ufo361-hoert-mit-musik-auf-fans-haben-dunklen-verdacht-P02HKQAZla7.png"
+})
+else if(message.content.toLowerCase().includes('optimal'))
+		message.channel.send({
+ file: "https://pbs.twimg.com/media/Cee4H46WQAMQe7v.jpg"
+})
+else if(message.content.toLowerCase().includes('marycha'))
+                message.channel.send({
+ file: "https://www.wykop.pl/cdn/c3201142/comment_W72ifSmKotx6rmhlj7vH5T14xpzaQX8I.gif"
+})
+else if(message.content.toLowerCase().includes('walo'))
+                message.channel.send({
+ file: "https://media.discordapp.net/attachments/502131887251390464/512686501184798731/Screenshot_20181115-185112.png"
+})
+else if(message.content.toLowerCase().includes('byku'))
+		message.channel.send(`${message.author} jebnij se chmure`)
+else if(message.content.toLowerCase().includes('siatki z zakupami'))
+                message.channel.send(`${message.author} ty huju co ty pierdolisz si‌atki z zakupami i zrywanie metek jak ostatnio widzialem cie jak nurkowales w kontenerze pck a sen‌tino trzymal cie za nogi zebys nie wpadl tam calkowicie`)
 });
+client.on('error', console.error);
+
 
 
