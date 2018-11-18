@@ -1,9 +1,3 @@
-const Dupa = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-}).on('line', (input) => {
-  console.log(`Received: ${input}`);
-});
 const Discord = require('discord.js');
 const config = require("./config.json");
 const client = new Discord.Client();
@@ -11,12 +5,11 @@ const bot = new Discord.Client();
 var sys = require('sys')
 var exec = require('child_process').exec;
 function puts(error, stdout, stderr) { sys.puts(stdout) }
- 
 client.login(config.token);
 bot.login(config.token);
 bot.on('ready', () => {
   bot.user.setActivity('Ich bin Deutscher Hip Hop', { type: 'WATCHING' }, { url: "https://www.youtube.com/watch?v=qLdxs74hL1U" })
-  bot.user.setStatus('dnd')
+  bot.user.setStatus('DND')
 })
 console.log(`Pomyślnie wystartowano`);
 client.on('error', console.error);
@@ -31,7 +24,7 @@ client.on('message', message => {
         message.channel.send("https://open.spotify.com/track/73Y3T1liCQuaUruFg0yP9b");    }
    if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
 	        message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" // Or replace with F
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
 })
 else if(message.content.toLowerCase().includes('bałuty'))
                 message.channel.send({
@@ -43,11 +36,11 @@ else if(message.content.toLowerCase().includes('baluty'))
 })
 else if(message.content.toLowerCase().includes('łódź'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" // Or replace with F
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
 })
 else if(message.content.toLowerCase().includes('złodziej'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" // Or replace with F
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" 
 })
 else if(message.content.toLowerCase().includes('lks'))
                 message.channel.send({
@@ -55,7 +48,7 @@ else if(message.content.toLowerCase().includes('lks'))
 })
 else if(message.content.toLowerCase().includes('łks'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407768560336896/lks.jpg" // Or replace with F
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407768560336896/lks.jpg" 
 })
 else if(message.content.toLowerCase().includes('se ba'))
                 message.channel.send({
@@ -147,6 +140,18 @@ else if(message.content.toLowerCase().includes('byku'))
 		message.channel.send(`${message.author} jebnij se chmure`)
 else if(message.content.toLowerCase().includes('siatki z zakupami'))
                 message.channel.send(`${message.author} ty huju co ty pierdolisz si‌atki z zakupami i zrywanie metek jak ostatnio widzialem cie jak nurkowales w kontenerze pck a sen‌tino trzymal cie za nogi zebys nie wpadl tam calkowicie`)
+else if(message.content.toLowerCase().includes('spejson'))
+				message.channel.send({
+	file: "https://cdn.discordapp.com/attachments/502129186295775256/513720992930201601/unknown.png"
+})
+else if(message.channel.toLowerCase().includes('wojtas'))
+				message.channel.send({
+	file: "https://cdn.discordapp.com/attachments/502129186295775256/513721491150340096/unknown.png"
+				})
+else if(message.channel.toLowerCase().includes('pisior'))
+				message.channel.send({
+					file: "https://vignette.wikia.nocookie.net/serialblokekipa/images/2/21/Pisior.png/revision/latest?cb=20170807152339&path-prefix=pl"
+				})
 });
 client.on('error', console.error);
 
