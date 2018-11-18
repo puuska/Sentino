@@ -150,7 +150,7 @@ else if(message.content.toLowerCase().includes('wojtas'))
 })
 else if(message.content.toLowerCase().includes('pisior'))
 		message.channel.send({
- file: "https://vignette.wikia.nocookie.net/serialblokekipa/images/2/21/Pisior.png/revision/latest?cb=20170807152339&path-prefix=pl"
+ file: "http://cute.gltdv.club/files/Yjbu.png"
 })
 });
 client.on('error', console.error);
