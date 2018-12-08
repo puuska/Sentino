@@ -9,7 +9,7 @@ client.login(config.token);
 bot.login(config.token);
 bot.on('ready', () => {
   bot.user.setActivity('Ich bin Deutscher Hip Hop', { type: 'WATCHING' }, { url: "https://www.youtube.com/watch?v=qLdxs74hL1U" })
-  bot.user.setStatus('DND')
+  bot.user.setStatus('dnd')
 })
 console.log(`Pomyślnie wystartowano`);
 client.on('error', console.error);
