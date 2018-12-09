@@ -74,6 +74,8 @@ else if(message.content.toLowerCase().includes('🗣'))
 		message.channel.send('ZNOWU NADAJE JEBANIEC')
 else if(message.content.toLowerCase().includes(':speaking_head:'))
 		message.channel.send('ZNOWU NADAJE JEBANIEC')
+else if(message.content.toLowerCase().includes('!s stats'))
+		message.channel.send(`I am on ${client.guilds.size} servers!`)
 else if(message.content.toLowerCase().includes('pokój'))
 		message.channel.send({
  file: "https://cdn.discordapp.com/attachments/497824872756674560/498471568750673920/kutassdfsdfs.png"
@@ -160,8 +162,12 @@ else if(message.content.toLowerCase().includes('fuck'))
 		message.channel.send({
  file: "http://cute.gltdv.club/files/PTP8.png"
 })
+else if(message.content.startsWith("!s ping")) {
+            message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
+    }
 });
 client.on('error', console.error);
+
 
 
 
