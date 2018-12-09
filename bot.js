@@ -8,6 +8,12 @@ var upSecs = 0;
 var upMins = 0;
 var upHours = 0;
 var upDays = 0;
+var userdisplay = config.onlinemessage
+
+
+
+states = ["Singleplayer Hide and Seek", "with Blü", "Unhandled Exception", "WASTED!", "Dumb", "Who's a good bot?", "Debian x64", "*Dial up noises*", "4A-GE Repairs", "Saving for my E46", "Ricer Simulator 2004", "DDoS Simulator", "bi noob delet mw go play tetris", "Forza Horizon 3", "It's hot in here", "spam?", "owo whats this", "Multi Theft Auto: San Andreas", "everything", "with Lego", "with Putin's Tank", "Assetto Corsa", "Snail Snail..."]
+
 function puts(error, stdout, stderr) { sys.puts(stdout) }
 client.login(config.token);
 bot.login(config.token);
@@ -20,9 +26,6 @@ client.on('error', console.error);
 setInterval(function() {
 	upSecs = upSecs + 1
 	if (upSecs >= 60) {
-		var userdisplay = states[Math.floor(Math.random() * states.length)];
-		c.user.setStatus(userstatus)
-		c.user.setGame(userdisplay)
 		upSecs = 0
 		upMins = upMins + 1
 	}
