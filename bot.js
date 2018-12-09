@@ -156,6 +156,10 @@ else if(message.content.toLowerCase().includes('thinkpad'))
 		message.channel.send({
  file: "https://cdn.discordapp.com/attachments/518791421415653376/521294191108685825/u6OkuekeGQmKxGBu9HxZ0d9sL1TrcvSmyksZUH31OPH77aeI_zQFV8MEEWnI4l9PXS8SznPtNwqw2aFhFCcQd-hfBa85f04beUl8.png"
 })
+else if(message.content.toLowerCase().includes('fuck'))
+		message.channel.send({
+ file: "http://cute.gltdv.club/files/PTP8.png"
+})
 });
 client.on('error', console.error);
 
