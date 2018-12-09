@@ -2,8 +2,12 @@ const Discord = require('discord.js');
 const config = require("./config.json");
 const client = new Discord.Client();
 const bot = new Discord.Client();
-var sys = require('sys')
+var sys = require('util')
 var exec = require('child_process').exec;
+var upSecs = 0;
+var upMins = 0;
+var upHours = 0;
+var upDays = 0;
 function puts(error, stdout, stderr) { sys.puts(stdout) }
 client.login(config.token);
 bot.login(config.token);
@@ -13,6 +17,25 @@ bot.on('ready', () => {
 })
 console.log(`Pomyślnie wystartowano`);
 client.on('error', console.error);
+setInterval(function() {
+	upSecs = upSecs + 1
+	if (upSecs >= 60) {
+		var userdisplay = states[Math.floor(Math.random() * states.length)];
+		c.user.setStatus(userstatus)
+		c.user.setGame(userdisplay)
+		upSecs = 0
+		upMins = upMins + 1
+	}
+	if (upMins >= 60) {
+		upMins = 0
+		upHours = upHours + 1
+	}
+	if (upHours >= 24) {
+		upHours = 0
+		upDays = upDays + 1
+		}
+	}, 1000)
+
 client.on('message', message => {
     if(message.content.toLowerCase() === 'sentino')
 
@@ -165,9 +188,8 @@ else if(message.content.toLowerCase().includes('fuck'))
 else if(message.content.startsWith("!s ping")) {
             message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
     }
-});
+else if(message.content.toLowerCase().includes('!s uptime'))
+
+	message.reply("```Current Uptime: \n" + upDays + " Days \n" + upHours + " Hours \n" + upMins + " Minutes \n" + upSecs + " Seconds```")
+})
 client.on('error', console.error);
-
-
-
-
