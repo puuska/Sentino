@@ -9,16 +9,11 @@ var upMins = 0;
 var upHours = 0;
 var upDays = 0;
 var userdisplay = config.onlinemessage
-
-
-
-states = ["Singleplayer Hide and Seek", "with Blü", "Unhandled Exception", "WASTED!", "Dumb", "Who's a good bot?", "Debian x64", "*Dial up noises*", "4A-GE Repairs", "Saving for my E46", "Ricer Simulator 2004", "DDoS Simulator", "bi noob delet mw go play tetris", "Forza Horizon 3", "It's hot in here", "spam?", "owo whats this", "Multi Theft Auto: San Andreas", "everything", "with Lego", "with Putin's Tank", "Assetto Corsa", "Snail Snail..."]
-
 function puts(error, stdout, stderr) { sys.puts(stdout) }
 client.login(config.token);
 bot.login(config.token);
 bot.on('ready', () => {
-  bot.user.setActivity('Ich bin Deutscher Hip Hop', { type: 'WATCHING' }, { url: "https://www.youtube.com/watch?v=qLdxs74hL1U" })
+  bot.user.setActivity('owo natalia-chan', { type: 'WATCHING' }, { url: "https://www.youtube.com/watch?v=qLdxs74hL1U" })
   bot.user.setStatus('dnd')
 })
 console.log(`Pomyślnie wystartowano`);
@@ -183,6 +178,10 @@ else if(message.content.toLowerCase().includes('pisior'))
 else if(message.content.toLowerCase().includes('thinkpad'))
 		message.channel.send({
  file: "https://cdn.discordapp.com/attachments/518791421415653376/521294191108685825/u6OkuekeGQmKxGBu9HxZ0d9sL1TrcvSmyksZUH31OPH77aeI_zQFV8MEEWnI4l9PXS8SznPtNwqw2aFhFCcQd-hfBa85f04beUl8.png"
+})
+else if(message.content.toLowerCase().includes('joker'))
+                message.channel.send({
+ file:"http://cute.gltdv.club/files/igKc_GMAF.png"
 })
 else if(message.content.toLowerCase().includes('fuck'))
 		message.channel.send({
