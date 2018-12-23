@@ -195,5 +195,9 @@ else if(message.content.startsWith("!s ping")) {
 else if(message.content.toLowerCase().includes('!s uptime'))
 
 	message.reply("```Current Uptime: \n" + upDays + " Days \n" + upHours + " Hours \n" + upMins + " Minutes \n" + upSecs + " Seconds```")
-})
+}
+else if(message.content.toLowerCase().includes('belmondo'))
+    message.channel.send({
+      file: "https://cdn-az.allevents.in/banners/8fe5d2bbd8394e94211b17493145424d-rimg-w615-h541-gmir.jpg"
+    })
 client.on('error', console.error);
