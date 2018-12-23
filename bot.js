@@ -198,3 +198,4 @@ else if(message.content.toLowerCase().includes('!s uptime'))
 	message.reply("```Current Uptime: \n" + upDays + " Days \n" + upHours + " Hours \n" + upMins + " Minutes \n" + upSecs + " Seconds```")
 })
 client.on('error', console.error);
+});
