@@ -61,7 +61,7 @@ else if(message.content.toLowerCase().includes('łódź'))
 })
 else if(message.content.toLowerCase().includes('złodziej'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png" 
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
 })
 else if(message.content.toLowerCase().includes('lks'))
                 message.channel.send({
@@ -69,7 +69,7 @@ else if(message.content.toLowerCase().includes('lks'))
 })
 else if(message.content.toLowerCase().includes('łks'))
                 message.channel.send({
- file: "https://cdn.discordapp.com/attachments/472165887148032000/475407768560336896/lks.jpg" 
+ file: "https://cdn.discordapp.com/attachments/472165887148032000/475407768560336896/lks.jpg"
 })
 else if(message.content.toLowerCase().includes('se ba'))
                 message.channel.send({
@@ -111,7 +111,7 @@ else if(message.content.toLowerCase().includes('pokoj'))
 })
 else if(message.content.toLowerCase().includes('montana'))
 		message.channel.send({
- file: "http://pedo.party/ZyBNmB33tqwuc9G.png"
+ file: "http://cute.gltdv.club/files/4LKb_.png"
 })
 else if(message.content.toLowerCase().includes('gdzie jest moj samsung'))
 		message.channel.send('dzwoni moj maxcom')
@@ -193,5 +193,8 @@ else if(message.content.startsWith("!s ping")) {
 else if(message.content.toLowerCase().includes('!s uptime'))
 
 	message.reply("```Current Uptime: \n" + upDays + " Days \n" + upHours + " Hours \n" + upMins + " Minutes \n" + upSecs + " Seconds```")
+})
+else if(message.content.toLowerCase().includes('🦊'))
+                message.channel.send(`${message.author} :fox:`)
 })
 client.on('error', console.error);
