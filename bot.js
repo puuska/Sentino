@@ -174,7 +174,7 @@ else if(message.content.toLowerCase().includes('wojtas'))
 else if(message.content.toLowerCase().includes('🦊'))
                 message.channel.send(`${message.author} :fox:`)
 })
-else if(message.content.toLowerCase().includes('pisior'))
+if(message.content.toLowerCase().includes('pisior'))
 		message.channel.send({
  file: "http://cute.gltdv.club/files/Yjbu.png"
 })
