@@ -172,9 +172,8 @@ else if(message.content.toLowerCase().includes('wojtas'))
  file: "https://cdn.discordapp.com/attachments/502129186295775256/513721491150340096/unknown.png"
 })
 else if(message.content.toLowerCase().includes('🦊'))
-                message.channel.send(`${message.author} :fox:`)
-})
-if(message.content.toLowerCase().includes('pisior'))
+                message.channel.send(`${message.author} :fox:`))
+else if(message.content.toLowerCase().includes('pisior'))
 		message.channel.send({
  file: "http://cute.gltdv.club/files/Yjbu.png"
 })
@@ -198,4 +197,3 @@ else if(message.content.toLowerCase().includes('!s uptime'))
 	message.reply("```Current Uptime: \n" + upDays + " Days \n" + upHours + " Hours \n" + upMins + " Minutes \n" + upSecs + " Seconds```")
 })
 client.on('error', console.error);
-);
