@@ -40,11 +40,11 @@ client.on('message', message => {
         message.channel.send({
     file: "https://f4.bcbits.com/img/a0381007741_10.jpg"
 })
-    else if(message.content.toLowerCase().includes('gps'))
-    {
-        message.channel.send({
-			file: "http://cute.gltdv.club/files/cNcI_2018-12-27_22-51-38.png"    })
-   if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
+else if(message.content.toLowerCase().includes('bałuty'))
+message.channel.send({
+file: "http://cute.gltdv.club/files/cNcI_2018-12-27_22-51-38.png"
+})
+if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
 	        message.channel.send({
  file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
 })
