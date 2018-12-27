@@ -42,7 +42,8 @@ client.on('message', message => {
 })
     else if(message.content.toLowerCase().includes('gps'))
     {
-        message.channel.send("http://cute.gltdv.club/files/cNcI_2018-12-27_22-51-38.png");    }
+        message.channel.send({
+			file: "http://cute.gltdv.club/files/cNcI_2018-12-27_22-51-38.png"    })
    if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
 	        message.channel.send({
  file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
