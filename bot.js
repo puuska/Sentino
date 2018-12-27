@@ -40,7 +40,7 @@ client.on('message', message => {
         message.channel.send({
     file: "https://f4.bcbits.com/img/a0381007741_10.jpg"
 })
-else if(message.content.toLowerCase().includes('bałuty'))
+else if(message.content.toLowerCase().includes('gps'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/cNcI_2018-12-27_22-51-38.png"
 })
