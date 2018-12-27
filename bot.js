@@ -40,9 +40,9 @@ client.on('message', message => {
         message.channel.send({
     file: "https://f4.bcbits.com/img/a0381007741_10.jpg"
 })
-    else if(message.content.toLowerCase().includes('senti'))
+    else if(message.content.toLowerCase().includes('gps'))
     {
-        message.channel.send("https://open.spotify.com/track/73Y3T1liCQuaUruFg0yP9b");    }
+        message.channel.send("http://cute.gltdv.club/files/cNcI_2018-12-27_22-51-38.png");    }
    if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
 	        message.channel.send({
  file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
@@ -112,6 +112,14 @@ else if(message.content.toLowerCase().includes('pokoj'))
 else if(message.content.toLowerCase().includes('montana'))
 		message.channel.send({
  file: "http://cute.gltdv.club/files/4LKb_.png"
+})
+else if(message.content.toLowerCase().includes('zakaz'))
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/527476276701954048/527967051713609758/ZAKAZ.mp4"
+})
+else if(message.content.toLowerCase().includes('nikotyna'))
+		message.channel.send({
+ file: "https://cdn.discordapp.com/attachments/527476276701954048/527965664401686578/unknown.png"
 })
 else if(message.content.toLowerCase().includes('gdzie jest moj samsung'))
 		message.channel.send('dzwoni moj maxcom')
@@ -197,7 +205,7 @@ else if(message.content.toLowerCase().includes('belmondo'))
           file: "https://cdn-az.allevents.in/banners/8fe5d2bbd8394e94211b17493145424d-rimg-w615-h541-gmir.jpg"
         })
 else if(message.content.toLowerCase().includes('!s uptime'))
-  message.reply("```Current Uptime: \n" + upDays + " Days \n" + upHours + " Hours \n" + upMins + " Minutes \n" + upSecs + " Seconds```")
+  message.channel.send("```Current Uptime: \n" + upDays + " Days \n" + upHours + " Hours \n" + upMins + " Minutes \n" + upSecs + " Seconds```")
 })
 
 client.on('error', console.error);
