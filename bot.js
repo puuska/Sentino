@@ -44,6 +44,20 @@ else if(message.content.toLowerCase().includes('gps'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/cNcI_2018-12-27_22-51-38.png"
 })
+else if(message.content.toLowerCase().includes('crisu'))
+message.channel.send({
+file: "http://cute.gltdv.club/files/kbKo_pobrane.jpeg"
+})
+else if(message.content.toLowerCase().includes('shevi'))
+message.channel.send({
+file: "http://cute.gltdv.club/files/kbKo_pobrane.jpeg"
+})
+else if(message.content.toLowerCase().includes('inoshi'))
+message.channel.send({
+file: "http://cute.gltdv.club/files/J3rR_inoshi.net.png"
+})
+else if(message.content.toLowerCase().includes('natalia'))
+                message.channel.send('uwu')
 if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
 	        message.channel.send({
  file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
