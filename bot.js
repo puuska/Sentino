@@ -48,6 +48,10 @@ else if(message.content.toLowerCase().includes('crisu'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/kbKo_pobrane.jpeg"
 })
+else if(message.content.toLowerCase().includes('mylobby'))
+message.channel.send({
+file: "https://i.ytimg.com/vi/rZMfEltSDmM/hqdefault.jpg"
+})
 else if(message.content.toLowerCase().includes('shevi'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/kbKo_pobrane.jpeg"
