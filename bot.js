@@ -60,9 +60,25 @@ else if(message.content.toLowerCase().includes('kapota'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/H6yp_chrome_l3y0TbMtkU.png"
 })
+else if(message.content.toLowerCase().includes('jarosław'))
+message.channel.send({
+file: "https://cdn.discordapp.com/attachments/534456466128633866/536365727574261761/IMG_20190115_112121.png"
+})
+else if(message.content.toLowerCase().includes('ocb'))
+message.channel.send({
+file: "https://cdn.discordapp.com/attachments/534456466128633866/536365874861309953/Screenshot_2019-01-13-18-36-06-931_com.google.android.youtube.png"
+})
 else if(message.content.toLowerCase().includes('inoshi'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/J3rR_inoshi.net.png"
+})
+else if(message.content.toLowerCase().includes('zdary złomputer'))
+message.channel.send({
+file: "https://cdn.discordapp.com/attachments/534456466128633866/536365218893398026/JPEG_20190106_203854.jpg"
+})
+else if(message.content.toLowerCase().includes('zdary zlomputer'))
+message.channel.send({
+file: "https://cdn.discordapp.com/attachments/534456466128633866/536365218893398026/JPEG_20190106_203854.jpg"
 })
 else if(message.content.toLowerCase().includes('natalia'))
                 message.channel.send('uwu')
