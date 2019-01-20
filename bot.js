@@ -56,6 +56,10 @@ else if(message.content.toLowerCase().includes('shevi'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/kbKo_pobrane.jpeg"
 })
+else if(message.content.toLowerCase().includes('kapota'))
+message.channel.send({
+file: "http://cute.gltdv.club/files/H6yp_chrome_l3y0TbMtkU.png"
+})
 else if(message.content.toLowerCase().includes('inoshi'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/J3rR_inoshi.net.png"
