@@ -60,6 +60,10 @@ else if(message.content.toLowerCase().includes('kapota'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/H6yp_chrome_l3y0TbMtkU.png"
 })
+else if(message.content.toLowerCase().includes('maciej'))
+message.channel.send({
+file: "https://cdn.discordapp.com/attachments/534456466128633866/536367027099795456/comment_A6oSlTrEVyyJr2vjrHvQwTSP7gbQC7PU.jpg"
+})
 else if(message.content.toLowerCase().includes('jarosław'))
 message.channel.send({
 file: "https://cdn.discordapp.com/attachments/534456466128633866/536365727574261761/IMG_20190115_112121.png"
