@@ -14,9 +14,8 @@ function puts(error, stdout, stderr) { sys.puts(stdout) }
 client.login(config.token);
 bot.login(config.token);
 bot.on('ready', () => {
-  bot.user.setActivity('NAGRZEWANIE', { type: 'WATCHING' }, { url: "https://www.youtube.com/watch?v=qLdxs74hL1U" })
-  bot.user.setStatus('dnd')
-  sleep.sleep(20)
+  bot.user.setActivity('NAGRZEWANIE')
+  sleep.sleep(15)
   bot.user.setActivity('uwu')
 })
 console.log(`Pomyślnie wystartowano`);
@@ -64,7 +63,7 @@ file: "http://cute.gltdv.club/files/H6yp_chrome_l3y0TbMtkU.png"
 })
 else if(message.content.toLowerCase().includes('xdd'))
 message.channel.send({
-file: "https://cdn.discordapp.com/attachments/536838204582526976/536970693804425227/qosbtx0.png"
+file: "http://cute.gltdv.club/files/hCW7_qosbtx0.png"
 })
 else if(message.content.toLowerCase().includes('maciej'))
 message.channel.send({
@@ -236,10 +235,12 @@ else if(message.content.toLowerCase().includes('pisior'))
 		message.channel.send({
  file: "http://cute.gltdv.club/files/Yjbu.png"
 })
-else if(message.content.toLowerCase().includes('thinkpad'))
+else if(message.content.toLowerCase().includes('thinkpad')){
+		message.react("💩")
 		message.channel.send({
  file: "https://cdn.discordapp.com/attachments/518791421415653376/521294191108685825/u6OkuekeGQmKxGBu9HxZ0d9sL1TrcvSmyksZUH31OPH77aeI_zQFV8MEEWnI4l9PXS8SznPtNwqw2aFhFCcQd-hfBa85f04beUl8.png"
 })
+}
 else if(message.content.toLowerCase().includes('dylemat'))
 		message.channel.send({
  file:"https://cdn.discordapp.com/attachments/527476276701954048/529692636936798238/comment_epF3NRrySp3q9Pjor9pwW2d2FZBt5zrX.jpg"
