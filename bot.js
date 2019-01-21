@@ -241,10 +241,12 @@ else if(message.content.toLowerCase().includes('thinkpad')){
  file: "https://cdn.discordapp.com/attachments/518791421415653376/521294191108685825/u6OkuekeGQmKxGBu9HxZ0d9sL1TrcvSmyksZUH31OPH77aeI_zQFV8MEEWnI4l9PXS8SznPtNwqw2aFhFCcQd-hfBa85f04beUl8.png"
 })
 }
-else if(message.content.toLowerCase().includes('dylemat'))
+else if(message.content.toLowerCase().includes('dylemat')){
+		message.react("🤔")
 		message.channel.send({
  file:"https://cdn.discordapp.com/attachments/527476276701954048/529692636936798238/comment_epF3NRrySp3q9Pjor9pwW2d2FZBt5zrX.jpg"
 })
+}
 else if(message.content.toLowerCase().includes('joker'))
                 message.channel.send({
  file:"http://cute.gltdv.club/files/igKc_GMAF.png"
