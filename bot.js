@@ -3,6 +3,7 @@ const config = require("./config.json");
 const client = new Discord.Client();
 const bot = new Discord.Client();
 var sys = require('util')
+var sleep = require('sleep');
 var exec = require('child_process').exec;
 var upSecs = 0;
 var upMins = 0;
@@ -13,8 +14,10 @@ function puts(error, stdout, stderr) { sys.puts(stdout) }
 client.login(config.token);
 bot.login(config.token);
 bot.on('ready', () => {
-  bot.user.setActivity('uwu', { type: 'WATCHING' }, { url: "https://www.youtube.com/watch?v=qLdxs74hL1U" })
+  bot.user.setActivity('NAGRZEWANIE', { type: 'WATCHING' }, { url: "https://www.youtube.com/watch?v=qLdxs74hL1U" })
   bot.user.setStatus('dnd')
+  sleep.sleep(20)
+  bot.user.setActivity('uwu')
 })
 console.log(`Pomyślnie wystartowano`);
 client.on('error', console.error);
@@ -33,7 +36,6 @@ setInterval(function() {
 		upDays = upDays + 1
 		}
 	}, 1000)
-
 client.on('message', message => {
     if(message.content.toLowerCase() === 'sentino')
 
@@ -137,7 +139,9 @@ else if(message.content.toLowerCase().includes('diho'))
 else if(message.content.toLowerCase().includes('uhuhuhu'))
 		message.channel.send('hahaha')
 else if(message.content.toLowerCase().includes('kapovsky'))
+{		message.react("🗣")
 		message.channel.send('🗣')
+}
 else if(message.content.toLowerCase().includes('🗣'))
 		message.channel.send('ZNOWU NADAJE JEBANIEC')
 else if(message.content.toLowerCase().includes(':speaking_head:'))
