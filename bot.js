@@ -155,6 +155,12 @@ else if(message.content.toLowerCase().includes('puszka'))
 		message.channel.send({
  file: "https://cdn.discordapp.com/attachments/497824872756674560/498889620919156756/43422196_1857188007735298_7672357555544260608_n.png"
 })
+else if(message.content.toLowerCase().includes('jin ling'))
+{		message.react("🚬")
+                message.channel.send({
+ file: "http://www.tanyaleighton.com/files/artists/Laric_Ise_Jingu_Jin_Ling_Cigs_web.jpg"
+})
+}
 else if(message.content.toLowerCase().includes('pokoj'))
 		message.channel.send({
  file: "https://cdn.discordapp.com/attachments/497824872756674560/498893033882910720/kutassdfsdfs.png"
