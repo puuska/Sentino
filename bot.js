@@ -273,3 +273,4 @@ else if(message.content.toLowerCase().includes('!s uptime'))
 })
 
 client.on('error', console.error);
+bot.on('error', console.error);
