@@ -61,6 +61,10 @@ else if(message.content.toLowerCase().includes('kapota'))
 message.channel.send({
 file: "http://cute.gltdv.club/files/H6yp_chrome_l3y0TbMtkU.png"
 })
+else if(message.content.toLowerCase().includes('paramont'))
+message.channel.send({
+file: "http://www.cigarety.by/img/HP0000101.jpg"
+})
 else if(message.content.toLowerCase().includes('pall mall'))
 message.channel.send({
 file: "http://cigarety.by/img/HP0001243.jpg"
