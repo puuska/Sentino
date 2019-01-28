@@ -70,9 +70,7 @@ message.channel.send({
 file: "http://cigarety.by/img/HP0001243.jpg"
 })
 else if(message.content.toLowerCase().includes('xdd'))
-message.channel.send({
-file: "http://cute.gltdv.club/files/hCW7_qosbtx0.png"
-})
+message.react("539520415890931725")
 else if(message.content.toLowerCase().includes('maciej'))
 message.channel.send({
 file: "https://cdn.discordapp.com/attachments/534456466128633866/536367027099795456/comment_A6oSlTrEVyyJr2vjrHvQwTSP7gbQC7PU.jpg"
