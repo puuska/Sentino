@@ -69,6 +69,10 @@ else if(message.content.toLowerCase().includes('pall mall'))
 message.channel.send({
 file: "http://cigarety.by/img/HP0001243.jpg"
 })
+else if(message.content.toLowerCase().includes('simek'))
+message.channel.send({
+file: "http://serwisko.pl/firmy/galeria/maxi_060520150415561430885756_7_xx.jpg"
+})
 else if(message.content.toLowerCase().includes('xdd'))
 message.react("539520415890931725")
 else if(message.content.toLowerCase().includes('maciej'))
