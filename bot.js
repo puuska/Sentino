@@ -36,7 +36,7 @@ setInterval(function() {
 		}
 	}, 1000)
 client.on('message', message => {
-    if(message.content.toLowerCase() === 'sentino')
+    if(message.content.toLowerCase().includes('sentino'))
 
         message.channel.send({
     file: "https://f4.bcbits.com/img/a0381007741_10.jpg"
@@ -99,7 +99,7 @@ else if(message.content.toLowerCase().includes('zdary zlomputer'))
 message.channel.send({
 file: "https://cdn.discordapp.com/attachments/534456466128633866/536365218893398026/JPEG_20190106_203854.jpg"
 })
-else if(message.content.toLowerCase().includes('natalia'))
+else if(message.content.toLowerCase() === 'natalia')
                 message.channel.send('uwu')
 if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
 	        message.channel.send({
