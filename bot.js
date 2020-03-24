@@ -99,9 +99,7 @@ else if(message.content.toLowerCase().includes('zdary zlomputer'))
 message.channel.send({
 file: "https://cdn.discordapp.com/attachments/534456466128633866/536365218893398026/JPEG_20190106_203854.jpg"
 })
-else if(message.content.toLowerCase() === 'natalia')
-                message.channel.send('uwu')
-if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
+else if(message.content.toLowerCase().includes('lodz','zlodziej','kurwa'))
 	        message.channel.send({
  file: "https://cdn.discordapp.com/attachments/472165887148032000/475407712474103818/small.png"
 })
